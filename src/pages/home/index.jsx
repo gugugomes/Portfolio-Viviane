@@ -3,18 +3,25 @@ import { Container, Content, About, Tecnologias } from "./style.js";
 import { Menu } from "../../components/Menu";
 import { Button } from "../../components/Button";
 
-import fIcon from "../../../public/figmaIcon.svg";
-import hIcon from "../../../public/htmlIcon.svg";
-import cIcon from "../../../public/CssIcon.svg";
-import jIcon from "../../../public/JavascripIcon.svg";
-import rIcon from "../../../public/React.svg";
-import gIcon from "../../../public/GitIcon.svg";
+import { AiOutlineArrowDown } from "react-icons/ai";
+
+import fIcon from "/public/figmaIcon.svg";
+import hIcon from "/public/htmlIcon.svg";
+import cIcon from "/public/CssIcon.svg";
+import jIcon from "/public/JavascripIcon.svg";
+import rIcon from "/public/React.svg";
+import gIcon from "/public/GitIcon.svg";
+import bIcon from "/public/brasil.png";
 
 export function Home() {
   return (
     <Container>
       <Menu />
       <Content>
+        <button className="language">
+          <img src={bIcon} alt="Bandeira do Brasil" />
+          <AiOutlineArrowDown />
+        </button>
         <h1>Viviane Castilho</h1>
         <p>I'm a Web Developer</p>
 

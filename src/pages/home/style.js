@@ -26,6 +26,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   > h1 {
     font-family: ${({ theme }) => theme.Fonts.TitleFont};
@@ -48,6 +49,32 @@ const Content = styled.div`
 
   > button {
     margin-bottom: 77px;
+  }
+
+  .btn {
+    width: 100%;
+
+    position: relative;
+  }
+
+  .language {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    width: 60px;
+    height: 25px;
+
+    border-radius: 5px;
+    padding: 0 5px;
+
+    background-color: ${({ theme }) => theme.Colors.Gray};
+
+    position: relative;
+    left: 525px;
+    top: 125px;
   }
 `;
 
