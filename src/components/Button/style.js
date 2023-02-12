@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
+  grid-area: button;
+
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #2c2d2f;
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   width: 260px;
@@ -14,13 +15,14 @@ const Container = styled.div`
   }
 
   .Nav {
-    margin: 16px 0 16px 56px;
+    border-top: 1px solid ${({ theme }) => theme.Colors.TitleColor};
+  
+    padding: 16px 52px;
   }
-`;
-
-const Line = styled.div`
-  width: 100%;
-  border: 1px solid ${({ theme }) => theme.Colors.Gray};
+  
+  .Nav:last-child {
+    border-bottom: 1px solid ${({ theme }) => theme.Colors.TitleColor};
+  }
 `;
 
 const Content = styled.div`
@@ -42,15 +44,6 @@ const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: left;
-    p {
-      font-family: ${({ theme }) => theme.Fonts.MainTextFont};
-      font-weight: 400;
-      font-size: 16px;
-
-      text-transform: uppercase;
-
-      color: ${({ theme }) => theme.Colors.Gray};
-    }
 
     svg {
       width: 20px;
@@ -73,7 +66,6 @@ const Footer = styled.div`
 
     margin-bottom: 37px;
 
-    > li {
       svg {
         width: 25px;
         height: 25px;
@@ -98,4 +90,14 @@ const Footer = styled.div`
   }
 `;
 
-export { Container, Line, Content, Footer };
+const PathLink = styled(Link)`
+  font-family: ${({ theme }) => theme.Fonts.MainTextFont};
+  font-weight: 400;
+  font-size: 16px;
+
+  text-transform: uppercase;
+
+  color: ${({ theme }) => theme.Colors.Gray};
+`;
+
+export { Container, Content, Footer, PathLink };

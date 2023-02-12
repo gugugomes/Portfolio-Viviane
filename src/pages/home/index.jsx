@@ -18,12 +18,14 @@ export function Home() {
     <Container>
       <Menu />
       <Content>
-        <button className="language">
-          <img src={bIcon} alt="Bandeira do Brasil" />
-          <AiOutlineArrowDown />
-        </button>
-        <h1>Viviane Castilho</h1>
-        <p>I'm a Web Developer</p>
+        <header>
+          <button className="language">
+            <img src={bIcon} alt="Bandeira do Brasil" />
+            <AiOutlineArrowDown />
+          </button>
+          <h1>Viviane Castilho</h1>
+          <p>I'm a Web Developer</p>
+        </header>
 
         <About>
           <p>

@@ -1,4 +1,5 @@
-import { Container, Line, Content, Footer } from "./style";
+import { Container, Content, Footer, PathLink } from "./style";
+
 import {
   AiOutlineHome,
   AiOutlineFolderOpen,
@@ -14,19 +15,15 @@ export function Menu() {
       <Content>
         <img src="https://cdn.discordapp.com/attachments/760135420599336971/1073969482898350171/Pic.jpg" />
         <h1>Viviane Castilho</h1>
-        <Line />
         <div className="Nav">
-          <AiOutlineHome /> <p>Home</p>
+          <AiOutlineHome /> <PathLink to="/">Home</PathLink>
         </div>
-        <Line />
         <div className="Nav">
-          <AiOutlineFolderOpen /> <p>Portfolio</p>
+          <AiOutlineFolderOpen /> <PathLink to="portfolio">Portfolio</PathLink>
         </div>
-        <Line />
         <div className="Nav">
-          <AiOutlineMail /> <p>Contact</p>
+          <AiOutlineMail /> <PathLink to="contact">Contact</PathLink>
         </div>
-        <Line />
       </Content>
 
       <Footer>
