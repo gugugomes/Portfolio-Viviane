@@ -19,10 +19,10 @@ export function Menu() {
           <AiOutlineHome /> <PathLink to="/">Home</PathLink>
         </div>
         <div className="Nav">
-          <AiOutlineFolderOpen /> <PathLink to="portfolio">Portfolio</PathLink>
+          <AiOutlineFolderOpen /> <PathLink to="/portfolio">Portfolio</PathLink>
         </div>
         <div className="Nav">
-          <AiOutlineMail /> <PathLink to="contact">Contact</PathLink>
+          <AiOutlineMail /> <PathLink to="/contact">Contact</PathLink>
         </div>
       </Content>
 
