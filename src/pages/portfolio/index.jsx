@@ -1,6 +1,7 @@
 import { Container, Content } from "./style";
 
 import { Menu } from "../../components/Menu";
+import { LanguageBTN } from "../../components/LanguageBTN/index.jsx";
 
 export function Portfolio() {
   return (
@@ -8,6 +9,7 @@ export function Portfolio() {
       <Menu />
       <Content>
         <header>
+          <LanguageBTN />
           <h1>Portfolio.</h1>
         </header>
         <section>

@@ -13,6 +13,8 @@ const Content = styled.div`
   grid-area: content;
   width: 100%;
 
+  position: relative;
+
   display: grid;
   grid-template-areas:
     "header"

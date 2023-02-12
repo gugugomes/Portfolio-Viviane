@@ -3,6 +3,7 @@ import { Container, Content } from "./style";
 import { Menu } from "../../components/Menu";
 import { TextArea } from "../../components/TextArea";
 import { Button } from "../../components/Button";
+import { LanguageBTN } from "../../components/LanguageBTN/index.jsx";
 
 export function Contact() {
   return (
@@ -10,6 +11,7 @@ export function Contact() {
       <Menu />
       <Content>
         <header>
+          <LanguageBTN />
           <h1>Contact Me.</h1>
         </header>
         <form>
