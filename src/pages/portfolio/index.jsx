@@ -6,7 +6,21 @@ export function Portfolio() {
   return (
     <Container>
       <Menu />
-      <Content></Content>
+      <Content>
+        <header>
+          <h1>Portfolio.</h1>
+        </header>
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+        <section>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+      </Content>
     </Container>
   );
 }
